@@ -6,14 +6,10 @@ Resource	../Keywords/main_paige_keywords.robot
 Test Setup	Open Tunnel bear main page
 Test Teardown	Close All Browsers
 
-*** Variables ***
-${invalidEmail}	xphas02@vse.cz
-${invalidPassword}	invalidPassword
-
 *** Test Cases ***
 Loging in with valid email and invalid password
 	Open login form
-	Login with credentials	${registeredEmail}	${invalidPassword}
+	Login with credentials	${registeredEmail}	${randomLongPassword}
 	Wait Until Page Contains	We can't seem to find that email and password combination, try another?
 
 Loging in witouth credentials
@@ -23,7 +19,7 @@ Loging in witouth credentials
 
 Loging in with invalid email and valid password
 	Open login form
-	Login with credentials	${invalidEmail}	${validPassword}
+	Login with credentials	${unregisteredEmail}	${validPassword}
 	Wait Until Page Contains	We can't seem to find that email and password combination, try another?
 
 Loging in with valid email and valid password
