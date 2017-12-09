@@ -1,0 +1,31 @@
+===Variables===
+${chrome} = "//chrome.google.com/webstore/detail/tunnelbear-vpn/omdakjcmkglenbhjadbccaookpfjihpa"
+${opena} = "//addons.opera.com/en/extensions/details/tunnelbear"
+${mac} = "https://s3.amazonaws.com/tunnelbear/downloads/mac/TunnelBear-3.5.0.zip"
+${windows} = "//tunnelbear.blob.core.windows.net/downloads/TunnelBear-Installer.exe"
+${iOS} = "https://geo.itunes.apple.com/app/tunnelbear-vpn-unblock-websites/id564842283?mt=8&at=1010l9nk"
+${android} = "https://play.google.com/store/apps/details?id=com.tunnelbear.android"
+
+
+
+===Test Cases===
+[T01] Download Extension
+    1. Open tunnelBear main page (http://tunnelbear.com)
+    2. Click Element "Download" in top menu
+    3. Find section "Browser Extensions"
+    4. Check if button "Chrome" is pointing to ${chrome}
+    5. Check if button "Opera" is pointing to ${opera}
+
+[T02] Download Version Desktop
+    1. Open tunnelBear main page (http://tunnelbear.com)
+    2. Click Element "Download" in top menu
+    3. Find section "Desktop"
+    4. Check if button "MAC" is pointing to ${mac}
+    5. Check if button "Windows" is pointing to ${windows}
+    
+[T03] Download Version Mobile
+    1. Open tunnelBear main page (http://tunnelbear.com)
+    2. Click Element "Download" in top menu
+    3. Find section "Mobile"
+    4. Check if button "iOS" is pointing to ${iOS}
+    5. Check if button "Android" is pointing to ${android}
