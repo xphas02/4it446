@@ -12,4 +12,5 @@ Change email
 	Wait Until Element Is Visible   xpath=//*[@id="main-view"]/div/div[2]/div/div/div[2]/div/form/div[2]/input
 	Input Password	xpath=//*[@id="main-view"]/div/div[2]/div/div/div[2]/div/form/div[2]/input	${password}
 	Wait Until Element Is Visible   xpath=//*[@id="main-view"]/div/div[2]/div/div/div[2]/div/form/div[3]/button[2]
+	Execute JavaScript    scroll(0, 250)
 	Click Button	xpath=//*[@id="main-view"]/div/div[2]/div/div/div[2]/div/form/div[3]/button[2]
