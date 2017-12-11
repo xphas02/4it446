@@ -1,6 +1,6 @@
 *** Variables ***
 ${mainPageUrl}	https://www.tunnelbear.com/
-${browser}	chrome
+${browser}	firefox
 ${mainPageTitle}	TunnelBear: Secure VPN Service
 ${registeredEmail}	4it446@gmail.com
 ${validPassword}	WORKERSperiodCANADA
