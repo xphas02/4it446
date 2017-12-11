@@ -3,7 +3,6 @@ Library	Selenium2Library
 Resource	../Variables/variables.robot
 Resource	../Keywords/main_paige_keywords.robot
 Resource	../Keywords/login_keywords.robot
-Resource	../Keywords/registration_keywords.robot
 Test Setup	Open Tunnel bear main page
 Test Teardown	Close All Browsers
 
