@@ -8,6 +8,7 @@ Test Teardown	Close All Browsers
 *** Test Cases ***
 Switch between apps and platforms
 	Wait Until Page Contains	APPS
+  Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
 	Click Link	xpath=//a[text()='iPhone & iPad']
 	Wait Until Page Contains Element	xpath=//a[@href='//geo.itunes.apple.com/app/tunnelbear-vpn-unblock-websites/id564842283?mt=8&at=1010l9nk']
 	Wait Until Page Contains Element	xpath=//a[@href='/apps/ios']
@@ -53,7 +54,7 @@ Switch between apps and platforms
 	Wait Until Page Contains Element	xpath=//a[@href='/apps/browser']
 	Wait Until Page Contains Element	xpath=//a[@href='/apps/blocker']
 	Location Should Be	https://www.tunnelbear.com/apps/browser
-	Click Link	xpath://a[@href='/apps/blocker']
+	Click Link	xpath=//a[@href='/apps/blocker']
 	Wait Until Page Contains Element	xpath=//a[text()='Add to Chrome' and @href='//chrome.google.com/webstore/detail/blockbear/bebdhgdigjiiamnkcenegafmfjoghafk']
 	Wait Until Page Contains Element	xpath=//a[@href='/apps/ios']
 	Wait Until Page Contains Element	xpath=//a[@href='/apps/android']
