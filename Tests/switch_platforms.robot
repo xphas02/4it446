@@ -53,7 +53,7 @@ Switch between apps and platforms
 	Wait Until Page Contains Element	xpath=//a[@href='/apps/browser']
 	Wait Until Page Contains Element	xpath=//a[@href='/apps/blocker']
 	Location Should Be	https://www.tunnelbear.com/apps/browser
-	Click Link	xpath://a[@href='/apps/blocker']
+	Click Link	xpath=//a[@href='/apps/blocker']
 	Wait Until Page Contains Element	xpath=//a[text()='Add to Chrome' and @href='//chrome.google.com/webstore/detail/blockbear/bebdhgdigjiiamnkcenegafmfjoghafk']
 	Wait Until Page Contains Element	xpath=//a[@href='/apps/ios']
 	Wait Until Page Contains Element	xpath=//a[@href='/apps/android']
