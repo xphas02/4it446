@@ -20,9 +20,9 @@ Pay with Testing Card (mastercard)
 Pay with Fake Card (visa)
     Enter Card Details    5315 9730 0303 3922    ZACHARY TAYLOR    12    2020    786    Hollow
     ...    Market    United Kingdom
-    Wait Until Page Contains    Your card was declined.
-
+    Wait Until Page Contains Element    xpath=//p[contains(@class,"alert")]
+    
 Pay with Fake Card (mastercard)
     Enter Card Details    5422 4137 7044 8698    SAVANNAH WHITE    12    2020    882    Hollow
     ...    Market    United Kingdom
-    Wait Until Page Contains    Your card was declined.
+    Wait Until Page Contains Element    xpath=//p[contains(@class,"alert")]
