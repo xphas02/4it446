@@ -25,4 +25,4 @@ Loging in with invalid email and valid password
 Loging in with valid email and valid password
 	Open login form
 	Login with Credentials	${registeredEmail}	${validPassword}
-	Wait Until Page Contains Element	xpath://button[text()='Log Out']
+	Wait Until Page Contains Element	xpath=//button[text()='Log Out']
