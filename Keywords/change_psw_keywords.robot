@@ -14,5 +14,5 @@ Change Psw
   	Wait Until Element Is Visible   xpath=//*[@id="main-view"]/div/div[3]/div/div/div[2]/div/form/div[3]/input
  	Input Password	xpath=//*[@id="main-view"]/div/div[3]/div/div/div[2]/div/form/div[3]/input	${newpasswordcopy}
 	Wait Until Element Is Visible   xpath=//*[@id="main-view"]/div/div[3]/div/div/div[2]/div/form/div[4]/button[2]
-	Execute JavaScript    scroll(0, 250)
+	Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
 	Click Button	xpath=//*[@id="main-view"]/div/div[3]/div/div/div[2]/div/form/div[4]/button[2]
