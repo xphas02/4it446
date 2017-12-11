@@ -23,6 +23,7 @@ Enter Card Details
     Input Text    xpath=//input[@name="address"]    ${address}
     Input Text    xpath=//input[@name="city"]    ${city}
     Select From List By Label    xpath=//select[@name="country"]    ${country}
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     Click Element    xpath=//button[contains(@class,"wait-btn")]
 
 Login and Upgrade
