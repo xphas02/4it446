@@ -8,3 +8,6 @@ ${randomLongPassword}	abacabadaca
 ${randomShortPassword}	abaca
 ${unregisteredEmail}	xphas02@vse.cz
 ${nonValidEmail}	4it446@gmails.cz
+${searchField}    id=q
+${magnifier}	id=support-search-submit
+${tunnelHelp}      https://help.tunnelbear.com/
