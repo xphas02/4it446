@@ -1,9 +1,9 @@
 *** Settings ***
-Test Setup        Open Browser	${tunnelHelp}	${browser}
-Test Teardown     Close Browser
-Library           Selenium2Library
-Resource          ../Keywords/browser_keywords.robot
-Resource		../Keywords/card_keywords.robot
+Test Setup	Open Browser	${tunnelHelp}	${browser}
+Test Teardown	Close Browser
+Library	Selenium2Library
+Resource	../Keywords/browser_keywords.robot
+Resource	../Keywords/card_keywords.robot
 
 *** Variables ***
 ${registeredEmail}	4it446@gmail.com
